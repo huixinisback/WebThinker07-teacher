@@ -11,8 +11,9 @@ This repository contains multiple game-based learning projects, each organized i
   - `L` files: Learning/enrichment experiments
 
 ---
-```
 ## 📁 Directory Overview
+```
+
 
 flappybird/
 ├── assets/ # Game images & sounds
