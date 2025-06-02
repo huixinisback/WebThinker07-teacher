@@ -12,30 +12,35 @@ function preload() {
 
 function setup() {
   new Canvas(400, 600);
-  // Activity 1: Add in bird with configured physics and other world physics items like L01_physics.js
-  // World gravity
   world.gravity.y = 10;
 
-  // Floor to bounce bird 
-  floor = new Sprite(200, height - 20, 400, 125, 'static' );
+  // Floor to bounce bird
+  floor = new Sprite(0, height - 20, 400, 125, 'static' );
   floor.img = base;
-  
-  // Bird Sprite with full physics and image
+  // Bird with full physics and image
   bird = new Sprite(width / 2, 200, 30, 30, 'dynamic');
   bird.img = flapMidImg;
   bird.mass = 2;         // heavier = stronger pull from gravity
   bird.drag = 0.02;      // air resistance
   bird.bounciness = 0.5; // how much it bounces when hitting floor
+ 
 }
 
 function draw() {
   background = image(bg, 0, 0, width, height); // background image
-  // Activity: Move bird up on mouse press/ press space, refer to L01_physics.js
+  // Activity: Move the bird foward, observe that the bird leaves the canvas
+  
+
   if (kb.presses('space') || mouse.presses()) {
     bird.vel.y = -5; // flap upward
   }
 
-  // Activity: Change image according to flying action/ falling
+  // Activity: Camera tracking the player, observe foreground staying behind 
+  
+  // Activity: Foreground tracking, observe everything looks static (it is moving together)
+  
+  
+   // change image according to  flying action/ falling
   if (bird.vel.y < -1) {
     bird.img = flapUpImg; // flying upward
     bird.rotation = -30
@@ -46,6 +51,5 @@ function draw() {
     bird.img = flapMidImg; // neutral
     bird.rotation = 0
   }
-
 }
  

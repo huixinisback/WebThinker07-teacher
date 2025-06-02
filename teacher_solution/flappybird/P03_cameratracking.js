@@ -14,32 +14,30 @@ function setup() {
   new Canvas(400, 600);
   world.gravity.y = 10;
 
-  // Floor for bounce
-  floor = new Sprite(200, height - 20, 400, 125, 'static' );
+  // Floor to bounce bird
+  floor = new Sprite(0, height - 20, 400, 125, 'static' );
   floor.img = base;
-
-  // Bird with full physics
+  // Bird with full physics and image
   bird = new Sprite(width / 2, 200, 30, 30, 'dynamic');
   bird.img = flapMidImg;
   bird.mass = 2;         // heavier = stronger pull from gravity
   bird.drag = 0.02;      // air resistance
   bird.bounciness = 0.5; // how much it bounces when hitting floor
-  // 
-  floor = new Sprite(0, height - 20, 400, 125, 'static' );
-  floor.img = base;
+ 
 }
 
 function draw() {
   background = image(bg, 0, 0, width, height); // background image
+  // Activity: Move the bird foward, observe that the bird leaves the canvas
   bird.x += 3; // bird moves forward
 
   if (kb.presses('space') || mouse.presses()) {
     bird.vel.y = -5; // flap upward
   }
 
-  // Activity: Camera tracking and background tracking
+  // Activity: Camera tracking the player, observe foreground staying behind 
   camera.x = bird.x; // camera tracking bird (player)
-  // comment out the line below to see the movement of the bird
+  // Activity: Foreground tracking camera, observe everything looks static (it is moving together)
   floor.x = camera.x; // floor moves with the screens to make it stay on the screen instead of a infinite floor 
   
    // change image according to  flying action/ falling
