@@ -43,7 +43,7 @@ teacher_solution/
 ├── fruitninja/
 │ ├── assets/
 │ ├── index.html
-│ ├── flappybird.js
+│ ├── fruitninja.js
 │ ├── lesson/projectfiles
 ├── geometrydash/
 │ ├── assets/
