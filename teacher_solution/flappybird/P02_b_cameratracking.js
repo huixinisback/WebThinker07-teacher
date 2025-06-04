@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   background = image(bg, 0, 0, width, height); // background image
   // Activity: Move the bird foward, observe that the bird leaves the canvas
-  bird.x += 3; // bird moves forward
+  bird.vel.x = 3; // bird moves forward
 
   if (kb.presses('space') || mouse.presses()) {
     bird.vel.y = -5; // flap upward

@@ -60,6 +60,7 @@ index.html
 |--------|------------------|-------------------------------------------------------------------------|
 | `Pxx_` | Project Scaffold  | Step-by-step task files for students to complete and merge into project |
 | `Lxx_` | Lesson Activity   | Enrichment/demonstration activities (non-essential to main game)        |
+| `Axx_` | Addtional Resources| Resources for teachers/ Not seen by students. Concept explaining.      |
 
 ---
 

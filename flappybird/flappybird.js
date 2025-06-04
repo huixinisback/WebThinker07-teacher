@@ -74,7 +74,7 @@ function draw() {
 
   if (startGame){
     bird.collider = 'dynamic';
-    bird.x += 3; // bird moves forward
+    bird.vel.x += 3; // bird moves forward
     // camera tracking and item tracking
     camera.x = bird.x;
     floor.x = camera.x;
