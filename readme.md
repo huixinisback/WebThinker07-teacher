@@ -19,40 +19,41 @@ flappybird/
 ├── assets/ # Game images & sounds
 ├── index.html # Launch page for Flappy Bird
 ├── flappybird.js # Main project file
-├── lesson/projectfiles
+└── lesson and project files
 
 fruitninja/
-├── assets/
-├── index.html
-├── fruitninja.js
-├── lesson/projectfiles
+├── assets/ # Game images & sounds
+├── index.html # Launch page for Fruit Ninja
+├── fruitninja.js # Main project file
+└── lesson and project files
 
 geometrydash/
-├── assets/
+├── assets/ # Game images & sounds
 ├── stages/ # Level data
-├── index.html
-├── geometrydash_advanced.js
-├── lesson/projectfiles
+├── index.html # Launch page for Geometry Dash
+├── geometrydash.js # Main project file
+└── lesson and project files
 
 teacher_solution/
 ├── flappybird/
-│ ├── assets/
-│ ├── index.html
-│ ├── flappybird.js
-│ ├── lesson/projectfiles
+│ ├── assets/ # Game images & sounds
+| ├── index.html # Launch page for Flappy Bird
+│ ├── flappybird.js # Main project file
+│ └── lesson and project files
 ├── fruitninja/
-│ ├── assets/
-│ ├── index.html
-│ ├── fruitninja.js
-│ ├── lesson/projectfiles
+│ ├── assets/ # Game images & sounds
+| ├── index.html # Launch page for Fruit Ninja
+│ ├── fruitninja.js # Main project file
+│ └── lesson and project files
 ├── geometrydash/
-│ ├── assets/
-│ ├── stages/ # Level data
-│ ├── index.html
-│ ├── geometrydash.js
-│ ├── lesson/projectfiles
+│ ├── assets/ # Game images & sounds
+| ├── stages/ # Level data
+| ├── index.html # Launch page for Geometry Dash
+│ ├── geometrydash.js # Main project file
+│ └── lesson and project files
 └── 
 index.html
+readme.md
 ```
 ## 🔤 File Naming Convention
 
