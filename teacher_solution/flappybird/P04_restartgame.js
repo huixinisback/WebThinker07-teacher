@@ -43,7 +43,7 @@ function setup() {
 
 function draw() {
   background = image(bg, 0, 0, width, height); // background image
-  // Activity: Prevent game from starting until mouse/keyboard press
+  // Activity: Prevent game from starting until mouse/keyboard press and display a start prompt
   if (kb.presses('space') || mouse.presses()) {
     startGame = true; // ALlow game mechanics to start by changing status to true
     startMessageLabel.visible = false; // Close the start prompt
@@ -87,7 +87,7 @@ function draw() {
 
     // Remove offscreen pipes
     for (let pipe of pipes) {
-      if (pipe.x < -50) pipe.remove();
+      if (pipe.x < bird.x-210) pipe.remove();
     }
 
     // Activity: End game on collision, display an image on the top layer using sprite for "Game Over"

@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
   background = image(bg, 0, 0, width, height); // background image
-  // Activity: Prevent game from starting until mouse/keyboard press
+  // Activity: Prevent game from starting until mouse/keyboard press and display a start prompt
 
 
   // Activity: check the start game status, if starting game, allow game mechanics
